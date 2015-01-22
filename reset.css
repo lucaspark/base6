@@ -1,0 +1,200 @@
+/* 
+Hard Reset
+Edited and refined from various sources by Luke Dickerson (c) 2015
+Eric Meyer's Reset: http://meyerweb.com/eric/tools/css/reset/
+Normalize: https://github.com/necolas/normalize.css
+Jayden Seric's Barebones: https://github.com/jaydenseric/Barebones
+*/
+
+html {
+	box-sizing: border-box;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-tap-highlight-color: transparent;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body {
+	margin: 0;
+	font: 100%/1 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+[hidden], template {
+	display: none !important;
+}
+iframe {
+	border: 0;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure,
+button {
+	margin: 0;
+	padding: 0;
+}
+/* Easy way to reset list styles */
+li {
+    display: block;
+}
+/* Reset without arbitrary sizes declared */
+h1,
+h2,
+h3,
+h4,
+p {
+	font-size: inherit;
+}
+strong {
+	font-weight: bold;
+}
+em, dfn {
+    font-style: italic;
+}
+/* Resets super and subscript */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; 
+}
+
+sup {
+  top: -0.5em; 
+}
+
+sub {
+  bottom: -0.25em; 
+}
+a,
+button {
+	color: inherit;
+}
+a, button, input {
+	transition: 0.2s;
+}
+a {
+	text-decoration: none;
+}
+button {
+	overflow: visible;
+	border: 0;
+	font: inherit;
+	margin: 0;
+	letter-spacing: inherit;
+	background: none;
+	cursor: pointer;
+	-webkit-font-smoothing: inherit;
+}
+button, input {
+  line-height: normal; 
+}
+::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; 
+}
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: inherit; 
+}
+/* Responsive images by default */
+img {
+	max-width: 100%;
+	height: auto;
+	border: 0;
+	font-size: 0;
+	vertical-align: middle;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Form Resets */
+input,
+label,
+select,
+button,
+textarea {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	display: inline-block;
+	vertical-align: middle;
+	white-space: normal;
+	background: none;
+}
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+input,
+textarea {
+	box-sizing: content-box; /* Prefixes for box-sizing no longer needed */
+}
+button,
+input[type=reset],
+input[type=button],
+input[type=submit],
+input[type=checkbox],
+input[type=radio],
+select {
+	box-sizing: border-box;
+}
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-moz-appearance: textfield;
+	box-sizing: content-box;
+}
+::-webkit-search-decoration {
+	display: none;
+}
+
+/* Gets rid of the blue border around selected inputs */
+:focus {
+	outline: 0;
+}
+textarea,
+select,
+input:not([type='radio']):not([type='checkbox']) {
+	-webkit-appearance: none;
+	-moz-appearance: none; /* This mercifully works once again since Firefox 35 */
+}
+select {
+	border-radius: 0;
+}
+textarea {
+	vertical-align: top;
+	overflow: auto;
+}
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"] {
+	overflow: visible;
+	width: auto;
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	cursor: pointer;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; 
+}
+/* Get rid of select arrows for IE 10+ */
+select::-ms-expand {
+    display: none;
+}
